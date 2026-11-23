@@ -453,6 +453,8 @@ function closeModal(){overlay.classList.remove('show');setTimeout(()=>document.g
 document.querySelectorAll('[data-key]').forEach(g=>g.addEventListener('click',()=>openModal(g.dataset.key)));
 document.getElementById('closeModal').addEventListener('click',closeModal);
 overlay.addEventListener('click',e=>{if(e.target===overlay)closeModal()});
+  ['images/gracie.avif','images/taylor.webp','images/jane.jpg','images/discoball.jpg',...albumImgs]
+  .forEach(src=>{const i=new Image();i.src=src});
 </script>
 </body>
 </html>
